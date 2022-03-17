@@ -1,5 +1,6 @@
 :root {
   --text-color: #667085;
+  --main-color: #8E2424;
 }
 
 * {
@@ -39,6 +40,32 @@ button {
 }
 
 button#signUp {
-  background-color: #8E2424;
+  background-color: var(--main-color);
   color: #FFF;
+}
+
+/* Cabeçalho - Primeira seção */
+
+.about-us {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos
+  os filhos de uma div com display flex*/
+}
+
+.about-us span {
+  color: var(--main-color);
+}
+
+.about-us h1 {
+  font-size: 2rem;
+}
+
+.about-us p {
+  color: var(--text-color);
+  max-width: 50%;
+  text-align: center;
+  line-height: 1.5rem;
 }
