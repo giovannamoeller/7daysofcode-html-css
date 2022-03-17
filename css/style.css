@@ -86,9 +86,10 @@ button#signUp {
   gap: 0.5rem;
 }
 
-.metric h1 {
+.metric span.title {
   color: var(--main-color);
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .metric span {
@@ -101,3 +102,4 @@ button#signUp {
   font-weight: 500;
   color: #101828;
 }
+
