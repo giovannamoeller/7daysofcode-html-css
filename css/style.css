@@ -76,7 +76,6 @@ button.signUp {
 .metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 8rem;
   column-gap: 3rem;
   padding: 0 4rem;
 }
