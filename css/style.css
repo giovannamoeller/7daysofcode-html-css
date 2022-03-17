@@ -1,6 +1,7 @@
 :root {
   --text-color: #667085;
   --main-color: #8E2424;
+  --title-color: #101828;
 }
 
 * {
@@ -61,6 +62,7 @@ button#signUp {
 
 .about-us h1 {
   font-size: 2rem;
+  color: var(--title-color);
 }
 
 .about-us p {
@@ -112,6 +114,10 @@ button#signUp {
   gap: 1rem;
 }
 
+.talents h2 {
+  color: var(--title-color);
+}
+
 .talents span {
   color: var(--main-color);
   background: rgba(142, 36, 36, 0.05);
@@ -140,6 +146,7 @@ button#signUp {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: bold;
+  color: var(--title-color);
 }
 
 .vaga {
@@ -149,6 +156,7 @@ button#signUp {
   max-width: 50%;
   margin: 0 auto;
   margin-bottom: 1rem;
+  color: var(--title-color);
 }
 
 .vaga span.titulo-vaga {
@@ -162,4 +170,44 @@ button#signUp {
   color: var(--text-color);
   display: flex;
   gap: 2rem;
+}
+
+/* Seção de depoimentos */
+
+.depoimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  margin: 8rem auto;
+  background-color: rgba(195, 25, 25, 0.05);
+  padding: 2rem;
+}
+
+.depoimento span {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.depoimento img {
+  width: 48px;
+}
+
+.depoimento h2 {
+  color: var(--title-color);
+  font-weight: 500;
+  text-align: center;
+  max-width: 70%;
+  margin: 2rem 0;
+}
+
+.depoimento span.nome {
+  color: var(--title-color);
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+.depoimento span.cargo {
+  color: var(--text-color);
+  font-weight: 400;
 }
