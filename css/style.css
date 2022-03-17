@@ -34,13 +34,12 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
-  font-weight: 500;
   background: none;
   color: var(--text-color);
   font-size: 0.9rem;
 }
 
-button#signUp {
+button.signUp {
   background-color: var(--main-color);
   color: #FFF;
 }
@@ -210,4 +209,38 @@ button#signUp {
 .depoimento span.cargo {
   color: var(--text-color);
   font-weight: 400;
+}
+
+/* Seção final - formulário de email */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F9FAFB;
+  padding: 6rem 0;
+  gap: 2rem;
+}
+
+footer h2 {
+  color: var(--title-color);
+}
+
+footer span {
+  color: var(--text-color);
+}
+
+footer form {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer input {
+  outline: none;
+  border: 1px solid #D0D5DD;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  width: 280px;
+  margin-right: 1rem;
 }
