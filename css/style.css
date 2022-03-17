@@ -127,3 +127,39 @@ button#signUp {
   margin-top: 2rem;
   width: 80%;
 }
+
+/* Seção de vagas abertas */
+
+.vagas-abertas {
+}
+
+.vagas-abertas span.area-principal {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.vaga {
+  border: 1px solid #EAECF0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.vaga span.titulo-vaga {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.vaga .informacoes {
+  margin-top: 1rem;
+  font-size: 90%;
+  color: var(--text-color);
+  display: flex;
+  gap: 2rem;
+}
