@@ -109,7 +109,7 @@ button.signUp {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem 0;
+  padding-top: 10rem;
   gap: 1rem;
 }
 
@@ -136,6 +136,7 @@ button.signUp {
 /* Seção de vagas abertas */
 
 .vagas-abertas {
+  padding-top: 4rem;
 }
 
 .vagas-abertas span.area-principal {
