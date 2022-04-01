@@ -1,5 +1,7 @@
 :root {
   --text-color: #667085;
+  --main-color: #8E2424;
+  --title-color: #101828;
 }
 
 * {
@@ -16,29 +18,340 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
-
 .links a {
   color: var(--text-color);
   text-decoration: none;
   margin-right: 2rem;
 }
 
+
 button {
   padding: 0.8rem 1rem;
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
-  font-weight: 500;
   background: none;
   color: var(--text-color);
   font-size: 0.9rem;
 }
 
-button#signUp {
-  background-color: #8E2424;
+button.signUp {
+  background-color: var(--main-color);
   color: #FFF;
+}
+
+.sideMenu {
+  display: none;
+  visibility: hidden;
+}
+
+.menu.active {
+  right: 0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu .links a {
+  margin-bottom: 2rem;
+}
+
+.sideMenu img {
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Cabeçalho - Primeira seção */
+
+.about-us {
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos
+  os filhos de uma div com display flex*/
+}
+
+.about-us span {
+  color: var(--main-color);
+}
+
+.about-us h1 {
+  font-size: 2rem;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.about-us p {
+  color: var(--text-color);
+  max-width: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* Seção de métricas */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  padding: 0 8rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric h1 {
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+.metric span {
+  color: var(--text-color);
+  line-height: 140%;
+  font-size: 90%;
+}
+
+.metric .metric-title {
+  font-weight: 500;
+  color: #101828;
+}
+
+/* Seção de talentos */
+
+.talents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  padding-top: 8rem;
+  gap: 1rem;
+}
+
+.talents h2 {
+  text-align: center;
+  color: var(--title-color);
+}
+
+.talents span {
+  color: var(--main-color);
+  background: rgba(142, 36, 36, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.talents p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.talents img {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+/* Seção de vagas abertas */
+
+.vagas-abertas {
+  padding-top: 4rem;
+}
+
+.vagas-abertas span.area-principal {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.vaga {
+  border: 1px solid #EAECF0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.vaga span.titulo-vaga {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.vaga .informacoes {
+  margin-top: 1rem;
+  font-size: 90%;
+  color: var(--text-color);
+  display: flex;
+  gap: 2rem;
+}
+
+/* Seção de depoimentos */
+
+.depoimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  margin: 8rem auto;
+  background-color: rgba(195, 25, 25, 0.05);
+  padding: 3rem 2rem;
+}
+
+.depoimento span {
+  color: var(--main-color);
+  font-weight: 500;
+  text-align: center;
+}
+
+.depoimento img {
+  width: 48px;
+}
+
+.depoimento h2 {
+  color: var(--title-color);
+  font-weight: 500;
+  text-align: center;
+  max-width: 70%;
+  margin: 2rem 0;
+}
+
+.depoimento span.nome {
+  color: var(--title-color);
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+.depoimento span.cargo {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+/* Seção final - formulário de email */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F9FAFB;
+  padding: 6rem 1rem;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+footer h2 {
+  color: var(--title-color);
+}
+
+footer span {
+  color: var(--text-color);
+}
+
+footer form {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer input {
+  outline: none;
+  border: 1px solid #D0D5DD;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  width: 12rem;
+  margin-right: 1rem;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 920px) {
+  .metrics {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .metric span {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .about-us p {
+    max-width: 70%;
+  }
+
+  .vaga {
+    max-width: 70%;
+  }
+  
+  .vagas-abertas span.area-principal {
+    max-width: 70%;
+  }
+
+  .depoimento h2 {
+    max-width: 100%;
+    font-size: 120%;
+  }
+
+  /* Ajustes de menu aqui */
+
+  .sideMenu {
+    display: initial;
+    visibility: visible;
+  }
+
+  .links {
+    margin: 2rem 0;
+  }
+
+  .links a {
+    margin-right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: #F9FAFB;
+    width: 15rem;
+    padding: 2rem;
+    transition: all 2s;
+  }
+
+  .menu .links, .menu .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
