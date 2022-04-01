@@ -22,12 +22,12 @@ nav {
   justify-content: space-between;
   padding: 1rem 2rem;
 }
+
 .links a {
   color: var(--text-color);
   text-decoration: none;
   margin-right: 2rem;
 }
-
 
 button {
   padding: 0.8rem 1rem;
