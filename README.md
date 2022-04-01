@@ -12,6 +12,6 @@ Por favor, note que ao longo do desenvolvimento eu fiz várias alterações no c
 
 E não há código certo ou errado, cada desenvolvedor possui sua própria maneira de escrever um código, portanto não se preocupe se o código não ficou igual ao meu (ou muito parecido).
 
-Estimule sua criatividade para desenvolver esse projeto! Se quiser alterar cores, textos, imagens, adicionar animações, ou qualquer outra coisa, fique a vontade! O objetivo é praticar.
+Estimule sua criatividade para desenvolver esse projeto! Se quiser alterar cores, textos, imagens, adicionar animações, alterar dark mode/light mode, ou qualquer outra coisa, fique a vontade! O objetivo é praticar.
 
 Até a próxima!
